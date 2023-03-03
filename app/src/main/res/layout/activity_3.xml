@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_taller3"
+    tools:context=".Activity3">
+
+    <TextView
+        android:id="@+id/txtInformacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtInformacion"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="250dp"
+        android:textSize="30dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtCorreo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txtCorreo"
+                android:textColor="@color/black"
+                android:fontFamily="serif-monospace"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/edCorreo"
+                android:textSize="25dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:clickable="false"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/txtCodigo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txtCodigo"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/edCodigo"
+                android:textSize="25dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:clickable="false"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:id="@+id/txtNota"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txtNota"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/edNota"
+                android:textSize="25dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:clickable="false"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

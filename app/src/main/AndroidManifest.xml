@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Taller3_Mendez_Useche"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA1qtPFXWwvxykwRKeCwhjxjfWj79x6z8o"/>
+        <activity
+            android:name=".Activity3"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
