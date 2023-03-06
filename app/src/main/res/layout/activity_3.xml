@@ -8,7 +8,7 @@
     android:background="@drawable/background_taller3"
     tools:context=".Activity3">
 
-    <TextView
+    <EditText
         android:id="@+id/txtInformacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,13 +41,11 @@
 
             <EditText
                 android:id="@+id/edCorreo"
-                android:textSize="25dp"
-                android:layout_width="250dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="serif-monospace"
-                android:clickable="false"
                 android:textColor="@color/black"
-                />
+                android:fontFamily="serif-monospace"
+                android:textSize="25dp" />
         </TableRow>
 
         <TableRow
@@ -67,13 +65,11 @@
 
             <EditText
                 android:id="@+id/edCodigo"
-                android:textSize="25dp"
-                android:layout_width="250dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif-monospace"
-                android:clickable="false"
                 android:textColor="@color/black"
-                />
+                android:textSize="25dp" />
         </TableRow>
 
         <TableRow

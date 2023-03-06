@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/background_taller3"
     tools:context=".Activity2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtIngreso"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="250dp"
+        android:textSize="30dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="398dp">
+
+        <EditText
+            android:id="@+id/txtCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/txtCodigo"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintCorreo"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Verificar"
+        android:backgroundTint="@color/brown"
+        android:text="@string/btnVerificar" />
+
+</LinearLayout>

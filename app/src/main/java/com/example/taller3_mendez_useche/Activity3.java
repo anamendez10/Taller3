@@ -6,21 +6,22 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 public class Activity3 extends AppCompatActivity {
-    EditText edCodigo;
-    EditText edCorreo;
-    EditText edNota;
+    EditText txtCodigo,txtCorreo, edNota;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_3);
 
-        edCodigo = findViewById(R.id.edCodigo);
-        edCorreo = findViewById(R.id.edCorreo);
+        txtCodigo = findViewById(R.id.edCodigo);
+        txtCorreo = findViewById(R.id.edCorreo);
         edNota = findViewById(R.id.edNota);
 
-        edCodigo.setEnabled(false);
-        edCorreo.setEnabled(false);
+        Estudiante estudiante =(Estudiante) getIntent().getSerializableExtra("Estudiante");
+        txtCodigo.setText(estudiante.getCodigo());
+        txtCorreo.setText(estudiante.getCorreo());
+        edNota.setText(estudiante.getNota());
+
         edNota.setEnabled(false);
     }
 }
