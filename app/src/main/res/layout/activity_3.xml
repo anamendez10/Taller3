@@ -8,7 +8,7 @@
     android:background="@drawable/background_taller3"
     tools:context=".Activity3">
 
-    <EditText
+    <TextView
         android:id="@+id/txtInformacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,45 +23,37 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginTop="20dp">
+
 
             <TextView
                 android:id="@+id/txtCorreo"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="@string/txtCorreo"
+                android:layout_marginTop="10dp"
                 android:textColor="@color/black"
                 android:fontFamily="serif-monospace"
-                android:textSize="25dp" />
+                android:textSize="30dp" />
 
             <EditText
                 android:id="@+id/edCorreo"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:autoSizeMaxTextSize="20dp"
                 android:fontFamily="serif-monospace"
                 android:textSize="25dp" />
-        </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="15dp">
 
             <TextView
                 android:id="@+id/txtCodigo"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="@string/txtCodigo"
+                android:layout_marginTop="10dp"
                 android:fontFamily="serif-monospace"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="30dp" />
 
             <EditText
                 android:id="@+id/edCodigo"
@@ -70,22 +62,17 @@
                 android:fontFamily="serif-monospace"
                 android:textColor="@color/black"
                 android:textSize="25dp" />
-        </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="15dp">
 
             <TextView
                 android:id="@+id/txtNota"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:text="@string/txtNota"
+                android:layout_marginTop="10dp"
                 android:fontFamily="serif-monospace"
                 android:textColor="@color/black"
-                android:textSize="25dp" />
+                android:textSize="30dp" />
 
             <EditText
                 android:id="@+id/edNota"
@@ -96,6 +83,5 @@
                 android:clickable="false"
                 android:textColor="@color/black"
                 />
-        </TableRow>
     </TableLayout>
 </LinearLayout>

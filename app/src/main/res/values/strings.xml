@@ -5,8 +5,8 @@
     <string name="btnSeguir">Seguir</string>
 
     <string name="txtIngreso">Ingresar</string>
-    <string name="hintCodigo">Codigo: </string>
-    <string name="hintCorreo">Correo: </string>
+    <string name="hintCodigo">Codigo </string>
+    <string name="hintCorreo">Correo </string>
     <string name="btnVerificar">Verificar Nota</string>
 
     <string name="txtInformacion">Información</string>

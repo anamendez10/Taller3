@@ -17,37 +17,42 @@
         android:textColor="@color/black"
         android:fontFamily="serif-monospace"
         android:layout_marginTop="250dp"
-        android:textSize="30dp" />
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"/>
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="398dp">
 
         <EditText
             android:id="@+id/txtCodigo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:ems="10"
-            android:hint="@string/txtCodigo"
-            android:inputType="textPersonName"
-            android:textSize="20sp" />
+            android:hint="@string/hintCodigo"
+            android:textColorHint="@color/black"
+            android:inputType="number"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"
+            />
 
         <EditText
             android:id="@+id/txtCorreo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:ems="10"
             android:hint="@string/hintCorreo"
+            android:textColorHint="@color/black"
             android:inputType="textEmailAddress"
+            android:fontFamily="serif-monospace"
             android:textSize="20sp" />
-    </TableLayout>
 
     <Button
+        android:layout_marginTop="20dp"
         android:id="@+id/btnVerificar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="Verificar"
         android:backgroundTint="@color/brown"
-        android:text="@string/btnVerificar" />
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/black"
+        android:text="@string/btnVerificar"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
